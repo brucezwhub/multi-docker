@@ -5,24 +5,28 @@
             "name": "client",
             "image": "brucezw/multi-client",
             "hostname": "client",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "server",
             "image": "brucezw/multi-server",
             "hostname": "api",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "worker",
             "image": "brucezw/multi-worker",
             "hostname": "worker",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "nginx",
             "image": "brucezw/multi-nginx",
             "hostname": "nginx",
+            "memory": 128,
             "essential": true,
             "portMappings": [
                 {
